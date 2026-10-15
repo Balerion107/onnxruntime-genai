@@ -5,8 +5,6 @@ name: "Linux CPU x64 Nightly Build"
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "0 5 * * *"
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
